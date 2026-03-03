@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* NÃO ESQUECER: Isto garante que o padding e a borda sejam
+                             incluídos no tamanho total do elemento.
+                             (o contrário é Content-box). */
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    
+}
