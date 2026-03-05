@@ -16,7 +16,7 @@ body {
     É opcional. Melhora a legibilidade em tamanho de fontes diferentes (espaçamento entre letras, ...) */ 
     font-weight: 400;
     font-style: normal;
-    background-color: var(--page-bg) linear-gradient(to bottom, #313b9eff #313b9e00) fixed;
+    background: var(--page-bg) linear-gradient(to bottom, #313b9eff #313b9e00) fixed;
     
 }
 
