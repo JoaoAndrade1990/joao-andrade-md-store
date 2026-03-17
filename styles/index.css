@@ -8,6 +8,7 @@
   box-sizing: border-box; /* NÃO ESQUECER: Isto garante que o padding e a borda sejam
                              incluídos no tamanho total do elemento.
                              (o contrário é Content-box). */
+  
 }
 
 body {
@@ -19,6 +20,12 @@ body {
   background: var(--page-bg)
     linear-gradient(to bottom, #0a1150ff 50%, #313b9e00) fixed;
   /* Foi necessário colocar "50%" para que o gradiente ficasse mais suave, sem uma linha tão nítida entre as cores. */
+color: whitesmoke;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .logo-icon {
@@ -32,6 +39,16 @@ body {
   width: 100%;
   z-index: 100;
   padding: 1.75rem;
-  background-image: linear-gradient(to bottom, #0a1150ff 50%, #313b9e00); 
-  /* Isto serve para criar um efeito de esfumaçamento */ 
+  background-image: linear-gradient(to bottom, #0a1150ff 88%, #313b9e00); 
+  /* Não criou esfumaçamento */ 
+}
+
+.nav-menu {
+  ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: end;
+  }
 }
