@@ -1,25 +1,40 @@
 :root {
-    --page-bg: #0a0b15;
+  --page-bg: #0a0b15;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box; /* NÃO ESQUECER: Isto garante que o padding e a borda sejam
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* NÃO ESQUECER: Isto garante que o padding e a borda sejam
                              incluídos no tamanho total do elemento.
                              (o contrário é Content-box). */
 }
 
 body {
-    font-family: "Inter", sans-serif;
-    /* font-optical-sizing: auto; -> valor default.
-    É opcional. Melhora a legibilidade em tamanho de fontes diferentes (espaçamento entre letras, ...) */ 
-    font-weight: 400;
-    font-style: normal;
-    background: var(--page-bg) linear-gradient(to bottom, #0a1150ff #313b9e00) fixed;
-    
+  font-family: "Inter", sans-serif;
+  /* font-optical-sizing: auto; -> valor default.
+    É opcional. Melhora a legibilidade em tamanho de fontes diferentes (espaçamento entre letras, ...) */
+  font-weight: 400;
+  font-style: normal;
+  background: var(--page-bg)
+    linear-gradient(to bottom, #0a1150ff 50%, #313b9e00) fixed;
+  /* Foi necessário colocar "50%" para que o gradiente ficasse mais suave, sem uma linha tão nítida entre as cores. */
 }
 
-.logoicon {
-    background-color: #0a1150;
+.logo-icon {
+  background-color: #0a1150;
+  position: sticky;
+  /* O logo está fora do header para se trabalhar com o position: sticky; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  top: 0;
+  left: 0;
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+
+.logo-icon-img {
+  width: 10rem;
+  height: 3.2rem;
 }
