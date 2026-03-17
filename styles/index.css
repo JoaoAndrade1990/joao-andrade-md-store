@@ -27,14 +27,11 @@ body {
   /* O logo está fora do header para se trabalhar com o position: sticky; */
   display: flex;
   justify-content: space-between;
-  align-items: center;
   top: 0;
   left: 0;
-  padding: 0.5rem 1rem;
   width: 100%;
-}
-
-.logo-icon-img {
-  width: 10rem;
-  height: 3.2rem;
+  z-index: 100;
+  padding: 1.75rem;
+  background-image: linear-gradient(to bottom, #0a1150ff 50%, #313b9e00); 
+  /* Isto serve para criar um efeito de esfumaçamento */ 
 }
