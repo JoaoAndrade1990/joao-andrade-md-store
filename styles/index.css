@@ -24,7 +24,7 @@ body {
   background: var(--page-bg)
     linear-gradient(to bottom, #0a1150ff 50%, #313b9e00) fixed;
   /* Foi necessário colocar "50%" para que o gradiente ficasse mais suave, sem uma linha tão nítida entre as cores. */
-color: whitesmoke;
+color: var(--text-color);
 }
 
 a {
@@ -77,4 +77,15 @@ h1 {
   font-size: var(--h1-size);
   font-weight: 900; /* Versão BLACK */
   line-height: 1;
+}
+
+.hero {
+  text-align: center;
+}
+
+.hero-title-upper {
+  text-transform:uppercase;
+  text-shadow: 2px 2px var(--text-color), -2px -2px var(--text-color), -2px 2px var(--text-color), 2px -2px var(--text-color);
+  /* Como não foi possível usar o text-stroke, fez-se um arranjo. */
+  color: #0a1150;
 }
