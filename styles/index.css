@@ -1,5 +1,10 @@
 :root {
   --page-bg: #0a0b15;
+  --grid-gap: .75rem;
+  --grid-margin: 1.5rem;
+  --text-color: whitesmoke;
+
+  --h1-size: 1.75rem;
 }
 
 * {
@@ -8,7 +13,6 @@
   box-sizing: border-box; /* NÃO ESQUECER: Isto garante que o padding e a borda sejam
                              incluídos no tamanho total do elemento.
                              (o contrário é Content-box). */
-  
 }
 
 body {
@@ -26,6 +30,10 @@ color: whitesmoke;
 a {
   text-decoration: none;
   color: inherit;
+}
+
+.container {
+  margin: 0 var(--grid-margin); /* 0 na vertical, e o valor da grid-margin na horizontal. */
 }
 
 .logo-icon {
@@ -51,4 +59,22 @@ a {
     gap: 1rem;
     align-items: end;
   }
+
+  a {
+    padding: .75rem;
+    display: inline-block; /* Não esquecer que o padding não funciona bem com elementos de linha! */
+    border-bottom: 2px solid transparent;
+
+    &:hover {
+      border-bottom: 2px solid blue;
+    }
+    /* Com esta borda adicionada, quando se faz hover, parece que o conteúdo "dá um pulo". 
+    Por isso, adiciona-se uma borda transparente na ligação (a). */
+  }
+}
+
+h1 {
+  font-size: var(--h1-size);
+  font-weight: 900; /* Versão BLACK */
+  line-height: 1;
 }
