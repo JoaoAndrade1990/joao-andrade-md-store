@@ -3,14 +3,19 @@
   --grid-gap: .75rem;
   --grid-margin: 1.5rem;
   --text-color: whitesmoke;
+  --text-size: .75rem;
   --primary-color: #cd8e11;
 
   --h1-size: 1.75rem;
+  --h2-size: 1.5rem;
+  --h3-size: 1.25rem;
 
   --button-padding-y: 1rem;
   --button-padding-x: 2.25rem;
 
   --section-distance-top: 4.5rem;
+  --subsection-distance-gap: 3.75rem;
+
 }
 
 * {
@@ -111,8 +116,69 @@ h1 {
   padding: var(--button-padding-y) var(--button-padding-x);
   border-radius: 10rem;
   background-color: var(--primary-color);
+  font-weight: 600;
 }
 
 main>*{
   padding-top: var(--section-distance-top);
+}
+
+h2 {
+  text-align: center;
+  font-weight: 900;
+  font-size: var(--h2-size);
+
+}
+
+.title-thin {
+  font-weight: 200;
+  font-style: italic;
+  display: block;
+}
+
+.courses, .courses-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--subsection-distance-gap);
+
+}
+
+.courses-card {
+  text-align: center;
+
+}
+
+h3 {
+  font-size: var(--h3-size);
+  text-align: center;
+  font-weight: 900;
+
+}
+
+p {
+  font-size: var(--text-size);
+}
+
+.btn-stroke {
+  background-color: transparent;
+  border: 2px solid var(--primary-color);
+}
+
+.courses-card {
+
+}
+
+.courses-card-content {
+  margin-top: 1rem;
+
+  p {
+    margin: 1.625rem 0;
+  }
+}
+
+.courses-card-ctas {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .5rem;
 }
