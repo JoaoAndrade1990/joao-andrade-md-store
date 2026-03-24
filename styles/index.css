@@ -66,6 +66,8 @@ img {
   /* Não criou esfumaçamento */ 
 }
 
+/* BARRA DE NAVEGAÇÃO */
+
 .nav-menu {
   ul {
     list-style-type: none;
@@ -93,6 +95,8 @@ h1 {
   font-weight: 900; /* Versão BLACK */
   line-height: 1;
 }
+
+/* HERO BANNER */
 
 .hero {
   text-align: center;
@@ -136,7 +140,11 @@ h2 {
   display: block;
 }
 
-.courses, .courses-list {
+
+/* COURSES */
+
+.courses, 
+.courses-list {
   display: flex;
   flex-direction: column;
   gap: var(--subsection-distance-gap);
@@ -183,21 +191,120 @@ p {
   gap: .5rem;
 }
 
+/* CRÍTICAS */
+
 .critics {
   display: flex;
   flex-direction: column;
   gap: var(--subsection-distance-gap) 
 }
 
-.critics-carroussel-wrappper {
+.critics-carroussel-wrapper {
   display: flex;
-  flex-wrap: nowrap;
-  overflow-x: scroll;
+  flex-wrap: nowrap; /* Impede que os itens quebrem para a próxima linha. */
+  overflow-x: scroll; /* Adiciona uma barra de rolagem horizontal quando o conteúdo excede a largura do container. */
   padding-bottom: 1rem;
   padding-right: var(--grid-gap);
 
+  scroll-snap-type: x mandatory;
+
   img {
-    margin-left: var(--grid-gap);
-    
+    margin-left: var(--grid-gap); /* Adiciona um espaço entre as imagens, exceto a primeira. */
+    width: calc(100vw - var(--grid-margin) * 2); 
+    /* Define a largura da imagem para ocupar toda a largura da tela, menos as margens. */
+    flex: 0 0 calc(100vw - var(--grid-margin) * 2);
+    scroll-snap-align: center; /* Ponto de ancoragem do scroll no centro da imagem. */
+
+  }
+}
+
+main {
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: var(--primary-color) transparent;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    height: .25rem;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: transparent;
+  }
+}
+
+/* LIVROS */
+
+.books,
+.books-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--subsection-distance-gap);
+}
+
+.books-card {
+  text-align: center;
+}
+
+.books-card-content {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.books-card-ctas {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  align-items: center;
+}
+
+.btn-ghost {
+  color: var(--primary-color);
+  border: none;
+  background-color: transparent;
+}
+
+.books-card-price {
+  font-size: 2rem;
+  font-weight: 900;
+}
+
+/* NOVIDADES */
+
+.news {
+  display:flex;
+  flex-direction: column;
+}
+
+.news-content {
+  text-align: center;
+
+  p {
+    font-size: var(--h3-size);
+    margin: 0 auto;
+    padding: .4rem;
+  }
+}
+
+.social-media {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  gap: 2.5rem;
+}
+
+footer {
+  p {
+    margin: 0 auto;
+    padding: .4rem
   }
 }
