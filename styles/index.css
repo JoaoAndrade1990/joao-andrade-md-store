@@ -48,7 +48,8 @@ img {
 }
 
 .container {
-  margin: 0 var(--grid-margin); /* 0 na vertical, e o valor da grid-margin na horizontal. */
+  margin-left: var(--grid-margin);
+  margin-right: var(--grid-margin);
 }
 
 .logo-icon {
@@ -64,6 +65,11 @@ img {
   padding: 1.75rem;
   background-image: linear-gradient(to bottom, #0a1150ff 88%, #313b9e00); 
   /* Não criou esfumaçamento */ 
+}
+
+.burguer-menu {
+  max-width: 100px;
+  padding: .6rem;
 }
 
 /* BARRA DE NAVEGAÇÃO */
@@ -153,14 +159,12 @@ h2 {
 
 .courses-card {
   text-align: center;
-
 }
 
 h3 {
   font-size: var(--h3-size);
   text-align: center;
   font-weight: 900;
-
 }
 
 p {

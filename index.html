@@ -15,12 +15,16 @@
 <body class="no-js">
    
     <div class="logo-icon">
-        <div class="logo-icon-img"><img src="/assets/logo-joao-andrade-md-store.png" alt="Logo da Página João Andrade MD"></div>
+        <div class="logo-icon-img">
+            <img src="/assets/logo-joao-andrade-md-store.png" alt="Logo da Página João Andrade MD">
+        </div>
 
-        <a href="#" aria-hidden="true">
-        <!-- Aria Hidden significa que o elemento não é acessível para usuários com deficiência visual -->
-        <img src="assets/burger-menu-white-transparent.png" alt="Burguer Menu Icon">
-        </a>
+        <div class="burguer-menu">
+            <a href="#hero" aria-hidden="true">
+            <!-- Aria Hidden significa que o elemento não é acessível para usuários com deficiência visual -->
+            <img src="assets/burguer-menu.png" alt="Burguer Menu Icon">
+            </a>
+        </div>
     </div>
  
     <header class="header">
@@ -28,10 +32,9 @@
             <nav class="nav-menu">
                 <ul>
                     <li><a href="#courses">Cursos João Andrade, MD</a></li>
-                    <li><a href="#books">E-books João Andrade, MD</a></li>
-                    <li><a href="#explicacoesparticulares">Explicações Particulares</a></li>
-                    <li><a href="#explicacoesgrupos">Explicações em Grupo</a></li>
-                    <li><a href="#news">Contactos</a></li>
+                    <li><a href="#critics">Críticas</a></li>
+                    <li><a href="#books">E-books</a></li>
+                    <li><a href="#news">Novidades</a></li>
                 </ul>
             </nav>
         </div>
@@ -39,12 +42,12 @@
 
     <main>
 
-        <section class="hero container">
+        <section class="hero container" id="hero">
             <h1 class="hero-title">O melhor lugar para encontrar explicações, cursos e livros de <span class="hero-title-upper">Ciências da Saúde</span></h1>
             <a class="btn hero-cta" href="#">Marque uma explicação</a>
         </section>
 
-        <section class="courses container" id="cursos">
+        <section class="courses container" id="courses">
             <h2 class="h2">Os Melhores Cursos <span class="titke-thin">Encontra Aqui!</span></h2>
 
             <div class="courses-list">
@@ -63,7 +66,7 @@
             </div>
         </section>
     
-        <section class="critics container">
+        <section class="critics container" id="critics">
             <div class="container">
                 <h2 class="h2">Alguns testemunhos <span class="title-thin">O têm dito dos cursos e explicações, por aí.</span></h2>
             </div>
@@ -77,7 +80,7 @@
             </section>
         </section>
     
-        <section class="books container">
+        <section class="books container" id="books">
             <h2 class="h2">E-books João Andrade, MD <span class="title-thin"> Os melhores Livros Digitais para alcançar a excelência!</span></h2>
             
             <div class="books-list">
@@ -115,7 +118,7 @@
             </div>
         </section>
     
-        <section class="news container">
+        <section class="news container" id="news">
             <h2 class="h2">Não perca as novidades da Loja <span class="title-thin">Atualizações, Promoções, Links Interessantes. Saiba tudo em primeira mão.</span></h2>
             <div class="news-content">
                 <p class="news-disclaimer">Escolha uma app para falar connosco!</p>
