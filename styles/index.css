@@ -312,3 +312,64 @@ footer {
     padding: .4rem
   }
 }
+
+.sm-hide {
+  display: none
+}
+
+@media screen and (width > 64em) {
+
+  :root {
+    --h1-size: 3.25rem;
+    --h2-size: 2.25rem;
+  }
+  
+  .md-hide {
+    display: none;
+  }
+  
+  .md-show {
+    display: revert;
+
+    /*
+    Display: initial; -> O elemento é renderizado de acordo com seu tipo (block, inline...)
+    Neste caso, uma div deixa de ter display block por padrão e passa a ter display inline.
+
+    Display: unset; -> Combina os efeitos de "initial" e "inherit". 
+    Se o elemento tiver um valor de display definido por um estilo pai, ele herdará esse valor. 
+    Caso contrário, ele usará o valor inicial do navegador para display.
+
+    Display: revert; -> O elemento é renderizado de acordo com as regras de estilo do navegador, 
+    ou seja, o estilo é "revertido" para o valor padrão do navegador. */
+  
+  }
+
+  .header {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 4.375rem;
+    padding-bottom: 3rem;
+    background-image: linear-gradient(to bottom, #0a1150ff 88%, #313b9e00); 
+  }
+
+  .logo-icon-img {
+    margin: auto;
+    text-align: center;
+  }
+
+  .nav-menu {
+    margin-top: 1.75rem;
+  }
+
+  .nav-menu ul {
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .hero-cta {
+    
+  }
+
+}
